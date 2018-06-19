@@ -1,0 +1,52 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-color: darkgrey;
+    background-blend-mode: multiply;
+    color: white;
+    outline: none;
+}
+
+
+ul {
+    list-style-type: none;
+  }
+
+li {
+    display: inline;
+}
+
+p {
+    font-size: 30px;
+}
+
+.btn {
+
+    
+    border: 0;
+    font-size: 30px;
+    color: white;
+}
+
+.potions {
+
+    margin: 10px;
+    float: left;
+    background: brown;
+    width: 150px;
+    height: 150px;
+}
+
+.current-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 55px;
+}
+
+.parchment-card {
+    font-size: 20px;
+}
+
