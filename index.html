@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Apothecary: PANIC!</title>
+    <title>Alchemic: PANIC!!</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
 
 </head>
+
 <body>
     <div class="jumbotron-fluid background">
-        <div class="container py-5">            
-                <div class="row text">
-                    <div class="col-lg-12 col-md-6 col-lg-offset-6 text-center">
-                        <h1>Apothecary: PANIC!</h1>                   
+        <div class="container py-5">
+            <div class="row text">
+                <div class="col-lg-12 col-md-6 col-lg-offset-6 text-center">
+                    <img src="./assets/images/logo.png" alt="Alchemic Panic" class="logo w-50">
                 </div>
             </div>
         </div>
@@ -30,54 +33,76 @@
                     <div class="col-12 text-center">
                     </div>
                     <br>
-                <div class="row">
-                    <div class="col-12">
-                        <ul>
-                        <li><img class="potions" id="red" src="./assets/images/red.jpg" alt="red"></li>
-                        <li><img class="potions" id="orange" src="./assets/images/orange.jpg" alt="orange"></li>
-                        <li><img class="potions" id="green" src="./assets/images/green.jpg" alt="green"></li>
-                        <li><img class="potions" id="blue" src="./assets/images/blue.jpg" alt="blue"></li>
-                        <li><img class="potions" id="indigo" src="./assets/images/indigo.jpg" alt="indigo"></li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                                <li>
+                                    <img class="potions" id="red" src="./assets/images/red.jpg" alt="red">
+                                </li>
+                                <li>
+                                    <img class="potions" id="orange" src="./assets/images/orange.jpg" alt="orange">
+                                </li>
+                                <li>
+                                    <img class="potions" id="green" src="./assets/images/green.jpg" alt="green">
+                                </li>
+                                <li>
+                                    <img class="potions" id="blue" src="./assets/images/blue.jpg" alt="blue">
+                                </li>
+                                <li>
+                                    <img class="potions" id="indigo" src="./assets/images/indigo.jpg" alt="indigo">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <br>
                 <br>
                 <div class="container">
-                <div class="row">
-
-                    <div class="col-md-7 text-center">
-                     
-                        <p>Cured: <span id="wins">0</span></p>
-                        <p>Deaths: <span id="losses">0</span></p>
-                        <button type="button" class="btn btn-warning" id="newGameButton">Next Patient!</button>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="row">
-                                
-                                <div class="card bg-transparent border-0 w-50" style="width: 18rem;">
-                                        <img class="card-img-top" src="./assets/images/parchment.png" alt="parchment">
-                                        <h2 class="current-number">00</h2>
-                                        <div class="card-body">
-                                          <p class="card-text text-center parchment-card">Current HP Number</p>
-                                        </div>
-                                      </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p id="game-text">The kingdom's alchemist has been called away on important business. It is up to you, his brand
+                                new apprentice, to balance out the villiager's humours. Remeber: each patient reacts differently
+                                to each potion! Balance the humors to cure them, but don't over do it! Too much magic will
+                                make them explode!</p>
                         </div>
+
+                        <div class="col-md-4 text-center">
+
+                            <p>Cured:
+                                <span id="wins">0</span>
+                            </p>
+                            <p>Whoops:
+                                <span id="losses">0</span>
+                            </p>
+                            <button type="button" class="btn btn-warning" id="newGameButton">Next Patient!</button>
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="card bg-transparent border-0 w-75" style="width: 18rem;">
+                                <img class="card-img-top" src="./assets/images/parchment.png" alt="parchment">
+                                <h2 class="current-number">00</h2>
+                                <div class="card-body">
+                                    <p class="card-text text-center parchment-card">Current Humour Level</p>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-1"></div>
                 </div>
             </div>
-            </div>
             <div class="col-3">
-                    <div class="card bg-transparent border-0" style="width: 18rem;">
-                        <img class="card-img-top" src="https://www.fillmurray.com/250/400" alt="Card image cap">
-                            <div class="card-body text-center"><span id="number-to-guess">00</span>
-                            </div>
-                    </div>
+                
+                <div class="card bg-transparent border-0" style="width: 18rem;">
+                        <p id="patientNumb">Your Patients are Waiting!</p>
+                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg/800px-Da_Vinci_Vitruve_Luc_Viatour.jpg"
+                        alt="Card image cap">
+                    <p class="text-center" id="number-to-guess">00</p>
+                </div>
             </div>
         </div>
     </div>
 </body>
 <script src="./assets/javascript/game.js"></script>
+
 </html>

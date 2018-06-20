@@ -2,6 +2,8 @@ body {
     background-image: url("../images/background.jpg");
     background-size: cover;
     color: white;
+    font-family:  'Oswald', sans-serif;
+    font-style: italic;
 }
 
 
@@ -15,6 +17,8 @@ li {
 
 p {
     font-size: 30px;
+    background: #2C2F33;
+    padding: 5px;
 }
 
 .btn {
@@ -32,6 +36,8 @@ p {
     background: brown;
     width: 150px;
     height: 150px;
+    border-radius: 10px;
+
 }
 
 .current-number {
@@ -40,10 +46,73 @@ p {
     color: black;
     position: absolute;
     margin-top: 45px;
-    margin-left: 55px;
+    margin-left: 65px;
+    font-style: normal;
 }
 
 .parchment-card {
     font-size: 20px;
 }
 
+
+#patientNumb {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+    font-style: normal;
+}
+
+#game-text {
+    font-size: 15px;
+    background: #2C2F33;
+    padding: 5px;
+}
+
+#number-to-guess {
+    font-size: 24px;
+    background: indigo;
+    font-style: normal;
+
+}
+ /* image glow */
+ 
+#red:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 75px 0px red;
+    -moz-box-shadow:    0px 0px 75px 0px red;
+    box-shadow:         0px 0px 75px 0px red;
+}
+#orange:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 75px 0px orange;
+    -moz-box-shadow:    0px 0px 75px 0px orange;
+    box-shadow:         0px 0px 75px 0px orange;
+}
+#green:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 75px 0px green;
+    -moz-box-shadow:    0px 0px 75px 0px green;
+    box-shadow:         0px 0px 75px 0px green;
+}
+#blue:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 75px 0px blue;
+    -moz-box-shadow:    0px 0px 75px 0px blue;
+    box-shadow:         0px 0px 75px 0px blue;
+}
+#indigo:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 75px 0px indigo;
+    -moz-box-shadow:    0px 0px 75px 0px indigo;
+    box-shadow:         0px 0px 75px 0px indigo;
+}
